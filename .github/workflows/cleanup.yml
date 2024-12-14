@@ -1,9 +1,9 @@
-name: Terraform Cleanup
+name: Destroy AWS S3 bucket using Terraform
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/3 * * * *' # Runs every day at midnight, adjust as needed
+    - cron: '0 0 * * *' # Runs every day at midnight, adjust as needed
 
 jobs:
   terraform-cleanup:
