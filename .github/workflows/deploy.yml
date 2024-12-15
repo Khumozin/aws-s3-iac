@@ -2,7 +2,7 @@ name: Deploy AWS S3 Bucket using Terraform
 
 on:
   workflow_dispatch:
-  pull_request:
+  push:
     branches:
       - main
     paths:
