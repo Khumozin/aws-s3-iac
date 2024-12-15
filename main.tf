@@ -21,7 +21,7 @@ resource "aws_s3_bucket_acl" "bucket_acl" {
   acl    = "private"
 }
 
-resource "aws_s3_bucket_public_access_block" "bucket_public_access" {
+resource "aws_s3_bucket_public_access_block" "bucket_public_access_block" {
   bucket = aws_s3_bucket.bucket.id
 
   block_public_acls       = true
