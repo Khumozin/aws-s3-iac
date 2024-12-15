@@ -43,7 +43,7 @@ resource "aws_kms_key" "kms_key" {
   deletion_window_in_days = 7
 }
 
-resource "aws_s3_bucket_server_side_encryption_configuration" "bucket_server_encryption_config" {
+resource "aws_s3_bucket_server_side_encryption_configuration" "bucket_server_encryption_configuration" {
   bucket = aws_s3_bucket.bucket.id
 
   rule {
